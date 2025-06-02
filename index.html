@@ -1,0 +1,416 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <title>Welcome to the Candy Shop</title> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <style> 
+
+    body { 
+
+      background-image: url("background.jpg"); 
+
+      background-size: cover; 
+
+      background-position: center; 
+
+      background-repeat: no-repeat; 
+
+    } 
+
+    .cart { 
+
+      width: 1.5rem; 
+
+      height: 1.5rem; 
+
+    } 
+
+    .card-img-top { 
+
+      width: 150px; 
+
+      height: 150px; 
+
+      margin-left: 20%; 
+
+    } 
+
+    .heading { 
+
+      font-family: 'Times New Roman', Times, serif; 
+
+      font-size: 80px; 
+
+      font-style: oblique; 
+
+      color: white; 
+
+      text-shadow: 2px 2px 4px #000; 
+
+      text-align: center; 
+
+      margin: 30px 0; 
+
+    } 
+
+    .card { 
+
+      cursor: pointer; 
+
+      transition: transform 0.2s; 
+
+    } 
+
+    .card:hover { 
+
+      transform: scale(1.05); 
+
+    } 
+
+    .col{ 
+
+        background-color: transparent; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+  <nav class="navbar navbar-dark bg-dark"> 
+
+    <div class="container-fluid"> 
+
+      <a class="navbar-brand">The Candy Shop</a> 
+
+      <a class="btn btn-warning"><img src="cart.png" class="cart" alt="Cart"></a> 
+
+    </div> 
+
+  </nav> 
+
+ 
+
+  <h1 class="heading">Let's sugar you up</h1> 
+
+ 
+
+  <div class="container mt-4"> 
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R29.99" data-name="Double Hearts" data-price="29.99"> 
+
+          <img src="Double_hearts.jpeg" class="card-img-top" alt="Double Hearts"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Double Hearts</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R15.99" data-name="Eclairs" data-price="15.99"> 
+
+          <img src="Eclairs.jpeg" class="card-img-top" alt="Eclairs"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Eclairs</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R19.99" data-name="Fantazz_miz" data-price="19.99"> 
+
+          <img src="Fantazz_miz.jpeg" class="card-img-top" alt="Fantazz_miz"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Fantazz Miz</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="25.99" data-name="Milk_bottles" data-price="25.99"> 
+
+          <img src="Milk_bottles.jpeg" class="card-img-top" alt="Milk_bottles"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Milk Bottles</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R35.99" data-name="Romantics" data-price="35.99"> 
+
+          <img src="Romatics.jpeg" class="card-img-top" alt="Romantics"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Romantics</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R28.99" data-name="Skittles" data-price="28.99"> 
+
+          <img src="Skittles.jpeg" class="card-img-top" alt="Skittles"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Skittles</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R35.99" data-name="Speckled Eggs" data-price="35.99"> 
+
+          <img src="speckled_eggs.jpg" class="card-img-top" alt="Eclairs"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Speckled Eggs</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R29.99" data-name="Stripes" data-price="29.99"> 
+
+          <img src="Stripes.jpeg" class="card-img-top" alt="Eclairs"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Stripes</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+    </div> 
+
+ 
+
+    <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R10.99" data-name="swedidsh_fish" data-price="10.99"> 
+
+          <img src="swedidsh_fish.jpeg" class="card-img-top" alt="Eclairs"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Swedish Fish</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="col"> 
+
+        <div class="card text-center" data-bs-toggle="tooltip" title="R25.99" data-name="Sweet_gums_galore" data-price="25.99"> 
+
+          <img src="Sweet_gums_galore.jpg" class="card-img-top" alt="Eclairs"> 
+
+          <div class="card-body"> 
+
+            <h5 class="card-title">Sweet Gums Galore</h5> 
+
+            <button class="btn btn-success add-to-cart">Buy</button> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+    </div> 
+
+  </div> 
+
+ 
+
+  <!-- Bootstrap JS Bundle --> 
+
+  <!-- Load Bootstrap JS Bundle (includes Popper for tooltips) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // --- Enable Bootstrap Tooltips ---
+  // Select all elements with the data-bs-toggle="tooltip" attribute
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+  // Initialize a tooltip for each element
+  [...tooltipTriggerList].forEach(el => new bootstrap.Tooltip(el));
+
+  // Shopping Cart Logic 
+  const buttons = document.querySelectorAll('.add-to-cart');
+
+  // Loop through each button and add a click event listener
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+      const card = btn.closest('.card');
+
+      // Get product name and price from custom data attributes
+      const name = card.getAttribute('data-name');
+      const price = parseFloat(card.getAttribute('data-price'));
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Add the current item to the cart
+      cart.push({ name, price });
+
+      // Save the updated cart back to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Show confirmation message
+      alert(`${name} added to cart!`);
+    });
+  });
+</script>
+
+
+ 
+
+<footer class="bg-dark text-light mt-5 pt-4 pb-3"> 
+  <div class="container"> 
+    <h4 class="text-center mb-4">Customer Details</h4> 
+
+    <form id="customerForm">
+      <div class="row align-items-center"> 
+        <!-- Image Column -->
+        <div class="col-md-4 mb-3">
+          <img src="logo.jpeg" alt="Logo" class="img-fluid" width = "250px" height="250px">
+        </div>
+
+        <!-- Form Fields Column -->
+        <div class="col-md-8">
+          <div class="mb-3"> 
+            <label for="name" class="form-label">Full Name</label> 
+            <input type="text" class="form-control" id="name" required> 
+          </div> 
+
+          <div class="mb-3"> 
+            <label for="email" class="form-label">Email Address</label> 
+            <input type="email" class="form-control" id="email" required> 
+          </div> 
+
+          <div class="mb-3"> 
+            <label for="Cell" class="form-label">Cell Phone Number</label> 
+            <input type="text" class="form-control" id="Cell" required> 
+          </div> 
+
+          <div class="text-center"> 
+            <button type="submit" class="btn btn-warning">Submit</button> 
+          </div> 
+        </div>
+      </div>
+    </form>
+
+    <p class="text-center mt-4 mb-0">© 2025 The Candy Shop. All rights reserved.</p> 
+  </div> 
+</footer>
+
+
+ 
+
+ 
+
+</body> 
+
+</html> 
+
+ 
+
+ 
